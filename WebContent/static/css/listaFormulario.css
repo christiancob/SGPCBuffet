@@ -1,0 +1,29 @@
+table{
+	width: 100%;
+	margin-bottom : .5em;
+    table-layout: fixed;
+
+}
+td, th {
+	padding: .7em;
+	margin: 0;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+
+th{
+	font-weight: bold;
+	background-color: #EEE;
+}
+#filtrar-por-nome{
+	width: 300px; 
+	height: 25px;
+	margin-bottom: 10px;
+}
+#data{
+	height: 25px;
+	margin-bottom: 10px;
+}
+.invisivel{
+	display: none;
+}

@@ -1,0 +1,18 @@
+html,body{
+    height: 100%;
+    margin: 0;
+}
+.todo-conteudo{
+    min-height: 100%;
+    margin-bottom: -50px;
+
+}
+.cinza{
+    color: rgb(134, 132, 128);
+}
+#usuario-on{
+    float: right;
+}
+.secao-lista{
+    margin-bottom: 60px;
+}

@@ -1,0 +1,22 @@
+#formulario-login{
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+	box-shadow: 0 0 30px;
+	padding: 20px 20px;
+	border-radius: 10px;
+
+}
+.form-group{
+	margin: 0 auto;
+}
+label {
+	font-family: 'Rounded Elegance', 'Century Gothic', 'CenturyGothic', 'AppleGothic', 'Trebuchet MS', sans-serif;
+}
+
+
+@media (max-width: 600px){
+	#formulario-login{
+		width: 80%;
+	}
+}
