@@ -13,6 +13,12 @@
 label {
 	font-family: 'Rounded Elegance', 'Century Gothic', 'CenturyGothic', 'AppleGothic', 'Trebuchet MS', sans-serif;
 }
+.alert{
+	padding: 5px !important;
+}
+#idEmail{
+	margin-top: 10px;
+}
 
 
 @media (max-width: 600px){

@@ -8,9 +8,11 @@ class AutenticacaoLogin {
 	
 	autentica(event){
 		event.preventDefault();
+
 		
 		this.email = event.target.email.value;
 		this.senha = event.target.senha.value;
+		
 		
 		const vm = this
 		$.getJSON("./json/usuarios.json", function(data) {
@@ -24,24 +26,27 @@ class AutenticacaoLogin {
 					window.location.href = "./home.html";
 
 				}else{
-					this.msg = "Senha incorreta!";
-					console.log(this.msg);
-					$("#formulario-login #msgerro").append(`<span class = 'msg'> ${this.msg}</span>`).fadeIn();
+					vm.msg = "Senha incorreta!";
+					$("#formulario-login #msgerro").append(`<span class = 'msg alert alert-danger'> ${vm.msg}</span>`).fadeIn();
 				}
 				
 			}else{
 				
-				this.msg = "Erro ao logar, usuario não encontrado!";
-				console.log(this.msg);
-				$("#formulario-login #msgerro").append(`<span class = 'msg'> ${this.msg}</span>`).fadeIn();
+				vm.msg = "Erro ao logar, usuario não encontrado!";
+				$("#formulario-login #msgerro").append(`<span class = 'msg alert alert-danger'> ${vm.msg}</span>`).fadeIn();
 			}
 		})
 	}
 	_limpaMsg(){
 		this.msg = "";
-		$("#formulario-login #msgerro").append(`<span class = 'msg'> ${this.msg}</span>`).fadeIn();
+		
+		$("#formulario-login #msgerro .alert").remove();
+		$("#formulario-login #msgerro .alert-danger").remove();
+		$("#formulario-login #msgerro .msg").remove();
+		$("#formulario-login #msgerro").fadeOut();
 		
 	}
+	
 	
 	
 }
