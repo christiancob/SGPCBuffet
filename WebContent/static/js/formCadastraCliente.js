@@ -1,4 +1,5 @@
-//document.getElementById("icon-visualiza").addEventListener("mouseover",function(){
-//	alert("Visualizar");	
-//});
+console.log('ola');
+document.getElementById("btnAddClientes").addEventListener("click",function(){
+	this.style.backgroundColor = "blue";	
+});
 

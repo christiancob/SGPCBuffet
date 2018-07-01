@@ -30,8 +30,7 @@ class AutenticacaoLogin {
 					$("#formulario-login #msgerro").append(`<span class = 'msg alert alert-danger'> ${vm.msg}</span>`).fadeIn();
 				}
 				
-			}else{
-				
+			}else{				
 				vm.msg = "Erro ao logar, usuario não encontrado!";
 				$("#formulario-login #msgerro").append(`<span class = 'msg alert alert-danger'> ${vm.msg}</span>`).fadeIn();
 			}
